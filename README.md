@@ -45,12 +45,13 @@ gitcreds::gitcreds_set()
 ```
 
 ### Create first release
+If you follow the steps, you would have written your first package. Seriously, it is that simple. 
 ```
 usethis::use_release_issue()
 ```
 
 ### Install your package
-If you follow the steps, you would have your first package ready to be installed. Seriously, it is that simple. You could use the follow code to install (before putting it on CRAN)
+You could use the follow code to install (before putting it on CRAN)
 ```
 devtools::install_github("justinchuntingho/myfirstpkg")
 ```
@@ -59,6 +60,7 @@ devtools::install_github("justinchuntingho/myfirstpkg")
 - Readme
 - Vignette
 - Unit tests
-- Get good at Git (optional, but seriously you would thank yourself in the future)
 - Bug reports
+- Get good at Git (optional, but seriously you would thank yourself in the future)
+- Get good at R (optional, but very useful. For example this: https://adv-r.hadley.nz/index.html)
 - Write a software paper (for example, Journal of Open Source Software)
