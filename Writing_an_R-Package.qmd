@@ -1,0 +1,45 @@
+---
+title: "Writing_an_R-Package"
+format: html
+---
+
+# Writing an R Package
+
+## Talk at the ICA Hackathon 2025
+
+-   In an R package, each file should contain only one function (suggested, not necessary)
+-   All R scripts go into the R folder, beyond that, choose your own system there
+-   Additionally, you need a DESCRIPTION file, including a licence (MIT license is recommended)
+-   The Description file also contains all required dependencies
+-   Recommended reading: R packages (2 edition) -- Hadley Wickham and Jennifer Bryan
+
+
+## Step by Step
+
+Install the packages devtools and usethis
+Then create a new project -- R studio has a preset for R package!
+
+IMPORTANT: When writing packages, you cannot import packages! Instead, you need to call each function with :: 
+Like stats::doFunction()
+
+Use Code -> Create Roxygen Skeleton to create the skeleton for the documentation of the package!
+
+devtools::document() creates the documentation from the roxygen skeleton!
+In Roxygen, if you do "@export" then users can use this function, if not, only the package itself can use those functions
+
+if you have dependencies, use the functions:
+usethis::use_mit_license()
+usethis::use_package("stats")
+
+## Setting up a git repo
+
+- 90 % of package management ist doing customer service. This happens via github
+if it is not a git repo, do usethis::use_git() (see the readme.md)
+
+see the readme.md for the rest anyways!
+
+
+Use Git hub Actions!! Get good at git!
+
+Advanced R is a good book for advanced R
+Write a software paper --> journal of Open Source Software!!
